@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const LoginScreen = ({ showScreen, showToast, showLoading, hideLoading }) => {
@@ -50,9 +49,21 @@ const LoginScreen = ({ showScreen, showToast, showLoading, hideLoading }) => {
         </button>
         <p style={{ textAlign: 'center', marginTop: '1rem', color: '#666' }}>
           Don't have an account?{' '}
-          <a href="#" onClick={handleSignup} style={{ color: '#667eea' }}>
+          <button
+            type="button"
+            onClick={handleSignup}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: '#667eea',
+              cursor: 'pointer',
+              textDecoration: 'underline',
+              padding: 0,
+              font: 'inherit',
+            }}
+          >
             Sign up
-          </a>
+          </button>
         </p>
       </div>
     </div>
