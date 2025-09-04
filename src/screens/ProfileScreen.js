@@ -36,7 +36,7 @@ const ProfileScreen = ({ showScreen }) => {
   };
 
   return (
-    <div className="screen profile">
+    <div className="screen profile " style={{ marginBottom: '40px' }}>
       <div className="header">
         <div className="vehicle-name">Profile & Settings</div>
       </div>
