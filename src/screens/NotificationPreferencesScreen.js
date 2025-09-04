@@ -99,7 +99,12 @@ const NotificationPreferencesScreen = ({ showScreen, showToast }) => {
   ];
 
   return (
-    <div className="screen notification-preferences">
+    <div className="screen notification-preferences" style={{
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflowY: 'auto' // 👈 makes the screen scrollable
+    }}>
       {/* ✅ Updated Header */}
       <div
         className="header"

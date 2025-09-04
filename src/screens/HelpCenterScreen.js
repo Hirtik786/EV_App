@@ -117,7 +117,12 @@ const HelpCenterScreen = ({ showScreen, showToast }) => {
   });
 
   return (
-    <div className="screen help-center">
+    <div className="screen help-center" style={{
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflowY: 'auto' // 👈 makes the screen scrollable
+    }}>
       <div
         className="header"
         style={{

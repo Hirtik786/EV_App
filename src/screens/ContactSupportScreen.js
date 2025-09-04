@@ -32,7 +32,12 @@ const ContactSupportScreen = ({ showScreen, showToast }) => {
   };
 
   return (
-    <div className="screen contact-support">
+    <div className="screen contact-support" style={{
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflowY: 'auto' // 👈 makes the screen scrollable
+    }}>
       <div
         className="header"
         style={{

@@ -26,7 +26,12 @@ const VehicleManagementScreen = ({ showScreen, showToast, vehicleState }) => {
   };
 
   return (
-    <div className="screen vehicle-management">
+    <div className="screen vehicle-management" style={{
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflowY: 'auto' // 👈 makes the screen scrollable
+    }}>
       {/* Header with Back + Title */}
       <div
         className="header"
